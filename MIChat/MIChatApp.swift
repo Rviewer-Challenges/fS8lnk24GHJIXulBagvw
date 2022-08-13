@@ -5,21 +5,23 @@ import Firebase
 struct MIChatApp: App {
 
     @StateObject var viewModel = AuthenticationViewModel()
+    @StateObject var firestoreManager = FirestoreManager()
 
     init() {
-      setupAuthentication()
+        setupAuthentication()
     }
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(viewModel)
+                .environmentObject(firestoreManager)
         }
     }
 }
 
 extension MIChatApp {
-  private func setupAuthentication() {
-    FirebaseApp.configure()
-  }
+    private func setupAuthentication() {
+        FirebaseApp.configure()
+    }
 }

@@ -50,11 +50,9 @@ class AuthenticationViewModel: ObservableObject {
     }
 
     func signOut() {
-      // 1
       GIDSignIn.sharedInstance.signOut()
 
       do {
-        // 2
         try Auth.auth().signOut()
 
         state = .signedOut
@@ -63,3 +61,5 @@ class AuthenticationViewModel: ObservableObject {
       }
     }
 }
+
+// Kudos 👉 https://blog.codemagic.io/google-sign-in-firebase-authentication-using-swift/

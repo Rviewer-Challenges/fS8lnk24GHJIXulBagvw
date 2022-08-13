@@ -15,6 +15,7 @@
 		1348587028A786B500D14F11 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348586F28A786B500D14F11 /* GoogleSignInButton.swift */; };
 		1348587228A78BC500D14F11 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587128A78BC500D14F11 /* UserView.swift */; };
 		1348587428A78D0900D14F11 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587328A78D0900D14F11 /* NetworkImage.swift */; };
+		1348587628A79B4600D14F11 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587528A79B4600D14F11 /* FirestoreManager.swift */; };
 		13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD028A6D6A300106BB5 /* MIChatApp.swift */; };
 		13B76DD328A6D6A300106BB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD228A6D6A300106BB5 /* ContentView.swift */; };
 		13B76DD528A6D6A400106BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B76DD428A6D6A400106BB5 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		1348586F28A786B500D14F11 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		1348587128A78BC500D14F11 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		1348587328A78D0900D14F11 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
+		1348587528A79B4600D14F11 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		13B76DCD28A6D6A300106BB5 /* MIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B76DD028A6D6A300106BB5 /* MIChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIChatApp.swift; sourceTree = "<group>"; };
 		13B76DD228A6D6A300106BB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				133E77A628A7818F00DE343A /* ChatViewController.swift */,
 				133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */,
 				1348586F28A786B500D14F11 /* GoogleSignInButton.swift */,
+				1348587528A79B4600D14F11 /* FirestoreManager.swift */,
 			);
 			path = MIChat;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				13B76E1228A6E53100106BB5 /* ChatViewModel.swift in Sources */,
 				133E779F28A7775D00DE343A /* Login.swift in Sources */,
 				133E77A728A7818F00DE343A /* ChatViewController.swift in Sources */,
+				1348587628A79B4600D14F11 /* FirestoreManager.swift in Sources */,
 				13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

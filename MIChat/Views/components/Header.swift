@@ -6,7 +6,7 @@ struct Header: View {
 
             VStack {
                 Spacer()
-                Text("💬 MYCHAT")
+                Text("💬 MICHAT")
                     .padding(.bottom, 8)
                     .font(.system(size: 25))
             }

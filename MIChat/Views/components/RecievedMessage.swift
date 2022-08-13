@@ -2,11 +2,12 @@ import SwiftUI
 
 struct RecievedMessage: View {
     var text: String
+    var user: String
 
     var body: some View {
         VStack(spacing: -18){
             HStack {
-                Text("David M.")
+                Text(user)
                     .font(.caption)
                     .padding(8)
                 Spacer()
@@ -34,6 +35,6 @@ struct RecievedMessage: View {
 
 struct RecievedMessage_Previews: PreviewProvider {
     static var previews: some View {
-        RecievedMessage(text: "This a recieved Message")
+        RecievedMessage(text: "This a recieved Message", user: "David M.")
     }
 }

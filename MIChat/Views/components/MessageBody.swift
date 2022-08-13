@@ -1,12 +1,15 @@
 import SwiftUI
 
 struct MessagesBody: View {
-    
+    @EnvironmentObject var firestoreManager: FirestoreManager
+
     var body: some View {
         ScrollView {
-            Spacer()
-            SendedMessage( text: "I received this message")
-            RecievedMessage(text: "I wrote this message")
+            ForEach(firestoreManager.chats) { chat in
+                RecievedMessage(text: chat.message, user: chat.name)
+            }
+        }.onAppear {
+            firestoreManager.fetchChatsRealTime()
         }
     }
 }
@@ -14,5 +17,6 @@ struct MessagesBody: View {
 struct MessagesBody_Previews: PreviewProvider {
     static var previews: some View {
         MessagesBody()
+            .environmentObject(FirestoreManager())
     }
 }
