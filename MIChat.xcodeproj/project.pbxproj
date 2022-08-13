@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133E779F28A7775D00DE343A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133E779E28A7775D00DE343A /* Login.swift */; };
+		133E77A228A77F2A00DE343A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 133E77A128A77F2A00DE343A /* GoogleSignIn */; };
+		133E77A428A77F2A00DE343A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 133E77A328A77F2A00DE343A /* GoogleSignInSwift */; };
+		133E77A728A7818F00DE343A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133E77A628A7818F00DE343A /* ChatViewController.swift */; };
+		133E77AB28A785BD00DE343A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */; };
+		1348587028A786B500D14F11 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348586F28A786B500D14F11 /* GoogleSignInButton.swift */; };
+		1348587228A78BC500D14F11 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587128A78BC500D14F11 /* UserView.swift */; };
+		1348587428A78D0900D14F11 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587328A78D0900D14F11 /* NetworkImage.swift */; };
 		13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD028A6D6A300106BB5 /* MIChatApp.swift */; };
 		13B76DD328A6D6A300106BB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD228A6D6A300106BB5 /* ContentView.swift */; };
 		13B76DD528A6D6A400106BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B76DD428A6D6A400106BB5 /* Assets.xcassets */; };
@@ -14,6 +22,18 @@
 		13B76DE228A6D6A400106BB5 /* MIChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DE128A6D6A400106BB5 /* MIChatTests.swift */; };
 		13B76DEC28A6D6A500106BB5 /* MIChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DEB28A6D6A500106BB5 /* MIChatUITests.swift */; };
 		13B76DEE28A6D6A500106BB5 /* MIChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DED28A6D6A500106BB5 /* MIChatUITestsLaunchTests.swift */; };
+		13B76DFC28A6D6DE00106BB5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DFB28A6D6DE00106BB5 /* Chat.swift */; };
+		13B76DFF28A6D6FE00106BB5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DFE28A6D6FE00106BB5 /* Header.swift */; };
+		13B76E0128A6D70D00106BB5 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E0028A6D70D00106BB5 /* Input.swift */; };
+		13B76E0328A6D72200106BB5 /* MessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E0228A6D72200106BB5 /* MessageBody.swift */; };
+		13B76E0528A6D73300106BB5 /* RecievedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E0428A6D73300106BB5 /* RecievedMessage.swift */; };
+		13B76E0728A6D74300106BB5 /* SendedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E0628A6D74300106BB5 /* SendedMessage.swift */; };
+		13B76E0928A6DA2400106BB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B76E0828A6DA2400106BB5 /* GoogleService-Info.plist */; };
+		13B76E0C28A6DBA900106BB5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0B28A6DBA900106BB5 /* FirebaseAuth */; };
+		13B76E0E28A6DBA900106BB5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0D28A6DBA900106BB5 /* FirebaseDatabase */; };
+		13B76E1028A6DBA900106BB5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0F28A6DBA900106BB5 /* FirebaseFirestore */; };
+		13B76E1228A6E53100106BB5 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E1128A6E53000106BB5 /* ChatViewModel.swift */; };
+		13B76E1628A6E58500106BB5 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E1528A6E58500106BB5 /* Firebase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133E779E28A7775D00DE343A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		133E77A528A77FE600DE343A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		133E77A628A7818F00DE343A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		1348586F28A786B500D14F11 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
+		1348587128A78BC500D14F11 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		1348587328A78D0900D14F11 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		13B76DCD28A6D6A300106BB5 /* MIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B76DD028A6D6A300106BB5 /* MIChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIChatApp.swift; sourceTree = "<group>"; };
 		13B76DD228A6D6A300106BB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +71,15 @@
 		13B76DE728A6D6A500106BB5 /* MIChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B76DEB28A6D6A500106BB5 /* MIChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIChatUITests.swift; sourceTree = "<group>"; };
 		13B76DED28A6D6A500106BB5 /* MIChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		13B76DFB28A6D6DE00106BB5 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		13B76DFE28A6D6FE00106BB5 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		13B76E0028A6D70D00106BB5 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		13B76E0228A6D72200106BB5 /* MessageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBody.swift; sourceTree = "<group>"; };
+		13B76E0428A6D73300106BB5 /* RecievedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedMessage.swift; sourceTree = "<group>"; };
+		13B76E0628A6D74300106BB5 /* SendedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendedMessage.swift; sourceTree = "<group>"; };
+		13B76E0828A6DA2400106BB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		13B76E1128A6E53000106BB5 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		13B76E1528A6E58500106BB5 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133E77A228A77F2A00DE343A /* GoogleSignIn in Frameworks */,
+				13B76E0E28A6DBA900106BB5 /* FirebaseDatabase in Frameworks */,
+				13B76E0C28A6DBA900106BB5 /* FirebaseAuth in Frameworks */,
+				133E77A428A77F2A00DE343A /* GoogleSignInSwift in Frameworks */,
+				13B76E1028A6DBA900106BB5 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +135,18 @@
 		13B76DCF28A6D6A300106BB5 /* MIChat */ = {
 			isa = PBXGroup;
 			children = (
+				133E77A528A77FE600DE343A /* Info.plist */,
+				13B76E1428A6E56F00106BB5 /* Services */,
+				13B76E0828A6DA2400106BB5 /* GoogleService-Info.plist */,
+				13B76DFA28A6D6B000106BB5 /* Views */,
 				13B76DD028A6D6A300106BB5 /* MIChatApp.swift */,
 				13B76DD228A6D6A300106BB5 /* ContentView.swift */,
 				13B76DD428A6D6A400106BB5 /* Assets.xcassets */,
 				13B76DD628A6D6A400106BB5 /* Preview Content */,
+				13B76E1128A6E53000106BB5 /* ChatViewModel.swift */,
+				133E77A628A7818F00DE343A /* ChatViewController.swift */,
+				133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */,
+				1348586F28A786B500D14F11 /* GoogleSignInButton.swift */,
 			);
 			path = MIChat;
 			sourceTree = "<group>";
@@ -127,6 +176,38 @@
 			path = MIChatUITests;
 			sourceTree = "<group>";
 		};
+		13B76DFA28A6D6B000106BB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13B76DFD28A6D6EC00106BB5 /* components */,
+				13B76DFB28A6D6DE00106BB5 /* Chat.swift */,
+				133E779E28A7775D00DE343A /* Login.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13B76DFD28A6D6EC00106BB5 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				13B76DFE28A6D6FE00106BB5 /* Header.swift */,
+				13B76E0028A6D70D00106BB5 /* Input.swift */,
+				13B76E0228A6D72200106BB5 /* MessageBody.swift */,
+				13B76E0428A6D73300106BB5 /* RecievedMessage.swift */,
+				13B76E0628A6D74300106BB5 /* SendedMessage.swift */,
+				1348587128A78BC500D14F11 /* UserView.swift */,
+				1348587328A78D0900D14F11 /* NetworkImage.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		13B76E1428A6E56F00106BB5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				13B76E1528A6E58500106BB5 /* Firebase.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +224,13 @@
 			dependencies = (
 			);
 			name = MIChat;
+			packageProductDependencies = (
+				13B76E0B28A6DBA900106BB5 /* FirebaseAuth */,
+				13B76E0D28A6DBA900106BB5 /* FirebaseDatabase */,
+				13B76E0F28A6DBA900106BB5 /* FirebaseFirestore */,
+				133E77A128A77F2A00DE343A /* GoogleSignIn */,
+				133E77A328A77F2A00DE343A /* GoogleSignInSwift */,
+			);
 			productName = MIChat;
 			productReference = 13B76DCD28A6D6A300106BB5 /* MIChat.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +303,10 @@
 				Base,
 			);
 			mainGroup = 13B76DC428A6D6A300106BB5;
+			packageReferences = (
+				13B76E0A28A6DBA900106BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				133E77A028A77F2A00DE343A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 13B76DCE28A6D6A300106BB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +325,7 @@
 			files = (
 				13B76DD828A6D6A400106BB5 /* Preview Assets.xcassets in Resources */,
 				13B76DD528A6D6A400106BB5 /* Assets.xcassets in Resources */,
+				13B76E0928A6DA2400106BB5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +350,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133E77AB28A785BD00DE343A /* AuthenticationViewModel.swift in Sources */,
+				13B76E1628A6E58500106BB5 /* Firebase.swift in Sources */,
+				13B76E0128A6D70D00106BB5 /* Input.swift in Sources */,
+				13B76E0528A6D73300106BB5 /* RecievedMessage.swift in Sources */,
+				13B76DFF28A6D6FE00106BB5 /* Header.swift in Sources */,
 				13B76DD328A6D6A300106BB5 /* ContentView.swift in Sources */,
+				1348587028A786B500D14F11 /* GoogleSignInButton.swift in Sources */,
+				1348587228A78BC500D14F11 /* UserView.swift in Sources */,
+				13B76E0328A6D72200106BB5 /* MessageBody.swift in Sources */,
+				13B76DFC28A6D6DE00106BB5 /* Chat.swift in Sources */,
+				1348587428A78D0900D14F11 /* NetworkImage.swift in Sources */,
+				13B76E0728A6D74300106BB5 /* SendedMessage.swift in Sources */,
+				13B76E1228A6E53100106BB5 /* ChatViewModel.swift in Sources */,
+				133E779F28A7775D00DE343A /* Login.swift in Sources */,
+				133E77A728A7818F00DE343A /* ChatViewController.swift in Sources */,
 				13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,8 +524,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MIChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G4S2SGHRL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MIChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +554,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MIChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G4S2SGHRL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MIChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +688,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		133E77A028A77F2A00DE343A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		13B76E0A28A6DBA900106BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		133E77A128A77F2A00DE343A /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 133E77A028A77F2A00DE343A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		133E77A328A77F2A00DE343A /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 133E77A028A77F2A00DE343A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		13B76E0B28A6DBA900106BB5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13B76E0A28A6DBA900106BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		13B76E0D28A6DBA900106BB5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13B76E0A28A6DBA900106BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		13B76E0F28A6DBA900106BB5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13B76E0A28A6DBA900106BB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13B76DC528A6D6A300106BB5 /* Project object */;
 }

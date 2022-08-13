@@ -1,16 +1,13 @@
-//
-//  ContentView.swift
-//  MIChat
-//
-//  Created by Diana Hernández on 12/8/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        switch viewModel.state {
+             case .signedIn: Chat()
+             case .signedOut: LoginView()
+           }
     }
 }
 
