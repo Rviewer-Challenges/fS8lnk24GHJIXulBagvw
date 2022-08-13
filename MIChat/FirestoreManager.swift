@@ -1,18 +1,24 @@
 import Firebase
 
+enum Owner {
+    case mine
+    case other
+}
+
 struct IChat: Identifiable {
     let id: Double
     let name: String
     let message: String
+    var owner: Owner
 }
+
 class FirestoreManager: ObservableObject {
 
     @Published var chats: [IChat] = []
     let db: Firestore = Firestore.firestore()
 
-
     func fetchChatsRealTime() {
-        db.collection("chats")
+        db.collection("chats").order(by: "id")
             .addSnapshotListener { querySnapshot, error in
                    guard let documents = querySnapshot?.documents else {
                        print("Error fetching documents: \(error!)")
@@ -22,10 +28,8 @@ class FirestoreManager: ObservableObject {
                     let id = $0["id"] as? Double ?? 0.0
                     let name = $0["name"] as? String ?? ""
                     let message = $0["message"] as? String ?? ""
-                    return IChat(id: id, name: name, message: message)
+                    return IChat(id: id, name: name, message: message, owner: .other)
                    }
-
-                print("Current cities in CA: \(self.chats)")
                }
 
     }
@@ -34,7 +38,7 @@ class FirestoreManager: ObservableObject {
         let docData: [String: Any] = [
             "id": chat.id,
             "name": chat.name,
-            "message": chat.message,
+            "message": chat.message
         ]
 
         db.collection("chats").addDocument(data: docData) { error in

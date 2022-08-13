@@ -9,7 +9,7 @@ struct Input: View {
     func saveChat() {
         let chat = IChat(id: NSDate().timeIntervalSince1970,
                          name: user?.profile?.name ?? "Fulanito de tal",
-                         message: text)
+                         message: text, owner: .mine)
 
         firestoreManager.saveChat(chat: chat)
     }
