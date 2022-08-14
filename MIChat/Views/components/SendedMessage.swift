@@ -2,17 +2,18 @@ import SwiftUI
 
 struct SendedMessage: View {
     var text: String
+    var stringDate: String
 
     var body: some View {
         VStack(spacing: -20){
             HStack {
                 Spacer()
-                Text("Me")
+                Text(stringDate)
                     .font(.caption)
                     .padding(8)
             }
             .frame(maxWidth: .infinity)
-            .padding(.trailing, 30)
+            .padding(.trailing, 20)
             HStack{
                 Spacer()
                 Text(text)
@@ -38,7 +39,7 @@ struct SendedMessage: View {
 
 struct SendedMessage_Previews: PreviewProvider {
     static var previews: some View {
-        SendedMessage(text: "This is sended Message")
+        SendedMessage(text: "This is sended Message", stringDate: "9:05 pm")
     }
 }
 
@@ -55,14 +56,8 @@ extension Color {
 }
 
 struct RoundCorner: Shape {
-
-    // MARK: - PROPERTIES
-
     var cornerRadius: CGFloat
     var maskedCorners: UIRectCorner
-
-
-    // MARK: - PATH
 
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: maskedCorners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))

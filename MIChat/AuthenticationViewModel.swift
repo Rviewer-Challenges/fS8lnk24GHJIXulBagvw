@@ -12,14 +12,14 @@ class AuthenticationViewModel: ObservableObject {
     @Published var state: SignInState = .signedOut
     private let firestoreManager = FirestoreManager()
 
-//    func changeState(logged: Bool) -> Void {
-//        if (logged) { self.state = .signedIn }
-//        else { self.state = .signedOut }
-//    }
-//
-//    init(){
-//        firestoreManager.getUser(id:"vgjtpPrYYSWL2PoFFHv7", changeState)
-//    }
+    func changeState(logged: Bool) -> Void {
+        if (logged) { self.state = .signedIn }
+        else { self.state = .signedOut }
+    }
+
+    init(){
+        firestoreManager.getUser(id:"vgjtpPrYYSWL2PoFFHv7", changeState)
+    }
 
     func signIn() {
       if GIDSignIn.sharedInstance.hasPreviousSignIn() {

@@ -7,9 +7,12 @@ struct Input: View {
     private let user = GIDSignIn.sharedInstance.currentUser
 
     func saveChat() {
-        let chat = IChat(id: NSDate().timeIntervalSince1970,
+        let id =  NSDate().timeIntervalSince1970
+        let chat = IChat(id: id,
                          name: user?.profile?.name ?? "Fulanito de tal",
-                         message: text, owner: .mine)
+                         message: text,
+                         owner: .mine,
+                         stringDate: firestoreManager.getStringHour(epoch: id))
 
         firestoreManager.saveChat(chat: chat)
     }
