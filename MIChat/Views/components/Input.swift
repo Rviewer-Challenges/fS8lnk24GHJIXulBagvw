@@ -19,6 +19,7 @@ struct Input: View {
             HStack {
                 TextField( "What you gonna share?",
                            text: $text)
+                .modifier(TextFieldClearButton(text: $text))
                 .padding(4)
                 .background(Color.white)
                 .cornerRadius(20)
@@ -26,13 +27,19 @@ struct Input: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.gray, lineWidth: 2)
                 )
-                Image(systemName: "paperplane.fill").resizable()
-                    .scaledToFit()
-                    .frame(height: 20)
-                    .foregroundColor(.white)
-                Button("send"){
-                    saveChat()
-                }
+                Button(
+                    action: {
+                        saveChat();
+                        self.text = ""
+                    },
+                    label: {
+                        Image(systemName: "paperplane.fill").resizable()
+                            .scaledToFit()
+                            .frame(height: 20)
+                            .foregroundColor(.white)
+                    }
+                )
+                
             }
             .padding()
             .frame(maxWidth: .infinity, maxHeight: 50)
@@ -45,5 +52,25 @@ struct Input_Previews: PreviewProvider {
     static var previews: some View {
         Input()
             .environmentObject(FirestoreManager())
+    }
+}
+
+struct TextFieldClearButton: ViewModifier {
+    @Binding var text: String
+
+    func body(content: Content) -> some View {
+        HStack {
+            content
+
+            if !text.isEmpty {
+                Button(
+                    action: { self.text = "" },
+                    label: {
+                        Image(systemName: "delete.left")
+                            .foregroundColor(Color(UIColor.opaqueSeparator))
+                    }
+                )
+            }
+        }
     }
 }

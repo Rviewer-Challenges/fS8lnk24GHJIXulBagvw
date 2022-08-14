@@ -3,7 +3,6 @@ import GoogleSignIn
 import FirebaseAuth
 
 class ChatViewController {
-
     init() {}
 
 

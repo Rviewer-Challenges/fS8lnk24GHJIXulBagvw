@@ -1,15 +1,13 @@
 import SwiftUI
-import GoogleSignIn
 
 struct SendedMessage: View {
     var text: String
-    private let user = GIDSignIn.sharedInstance.currentUser
 
     var body: some View {
-        VStack(spacing: -19){
+        VStack(spacing: -20){
             HStack {
-              Spacer()
-                Text(user?.profile?.name ?? "Me")
+                Spacer()
+                Text("Me")
                     .font(.caption)
                     .padding(8)
             }
@@ -18,15 +16,21 @@ struct SendedMessage: View {
             HStack{
                 Spacer()
                 Text(text)
+                    .bold()
                     .padding(.trailing, 20)
                     .padding(.leading, 35)
-                    .padding(.top, 6)
-                    .padding(.bottom, 6)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.orange, lineWidth: 2)
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
+                    .foregroundColor(.white)
+                    .background(Color(0xFF8707, alpha: 0.9))
+                    .clipShape(
+                        RoundCorner(
+                            cornerRadius: 12,
+                            maskedCorners: [.topLeft, .bottomLeft, .topRight]
+                        )
                     )
             }
+
             .padding()
         }.frame(maxWidth: .infinity)
     }
@@ -37,3 +41,33 @@ struct SendedMessage_Previews: PreviewProvider {
         SendedMessage(text: "This is sended Message")
     }
 }
+
+extension Color {
+    init(_ hex: UInt, alpha: Double = 1) {
+        self.init(
+            .sRGB,
+            red: Double((hex >> 16) & 0xFF) / 255,
+            green: Double((hex >> 8) & 0xFF) / 255,
+            blue: Double(hex & 0xFF) / 255,
+            opacity: alpha
+        )
+    }
+}
+
+struct RoundCorner: Shape {
+
+    // MARK: - PROPERTIES
+
+    var cornerRadius: CGFloat
+    var maskedCorners: UIRectCorner
+
+
+    // MARK: - PATH
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: maskedCorners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        return Path(path.cgPath)
+    }
+}
+
+// Kudos https://stackoverflow.com/questions/71248005/round-specific-corners-in-a-swiftui-mac-app

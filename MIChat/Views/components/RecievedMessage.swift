@@ -18,12 +18,14 @@ struct RecievedMessage: View {
                 Text(text)
                     .padding(.leading, 20)
                     .padding(.trailing, 35)
-                    .padding(.top, 6)
-                    .padding(.bottom, 6)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.orange, lineWidth: 2)
-
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
+                    .background(Color(0xFF8707, alpha: 0.3))
+                    .clipShape(
+                        RoundCorner(
+                            cornerRadius: 12,
+                            maskedCorners: [.topLeft, .bottomRight, .topRight]
+                        )
                     )
                 Spacer()
             }

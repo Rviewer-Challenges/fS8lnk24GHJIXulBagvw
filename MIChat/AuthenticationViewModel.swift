@@ -10,6 +10,16 @@ class AuthenticationViewModel: ObservableObject {
     }
 
     @Published var state: SignInState = .signedOut
+    private let firestoreManager = FirestoreManager()
+
+//    func changeState(logged: Bool) -> Void {
+//        if (logged) { self.state = .signedIn }
+//        else { self.state = .signedOut }
+//    }
+//
+//    init(){
+//        firestoreManager.getUser(id:"vgjtpPrYYSWL2PoFFHv7", changeState)
+//    }
 
     func signIn() {
       if GIDSignIn.sharedInstance.hasPreviousSignIn() {
@@ -39,6 +49,7 @@ class AuthenticationViewModel: ObservableObject {
       guard let authentication = user?.authentication, let idToken = authentication.idToken else { return }
 
       let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
+        firestoreManager.saveUser(name: user?.profile?.name ?? "unknown", idToken: idToken, accessToken: authentication.accessToken)
 
       Auth.auth().signIn(with: credential) { [unowned self] (_, error) in
         if let error = error {
@@ -54,7 +65,6 @@ class AuthenticationViewModel: ObservableObject {
 
       do {
         try Auth.auth().signOut()
-
         state = .signedOut
       } catch {
         print(error.localizedDescription)
