@@ -1,14 +1,13 @@
 import SwiftUI
 
 struct SendedMessage: View {
-    var text: String
-    var stringDate: String
+    var chat: IChat
 
     var body: some View {
         VStack(spacing: -20){
             HStack {
                 Spacer()
-                Text(stringDate)
+                Text(chat.stringDate)
                     .font(.caption)
                     .padding(8)
             }
@@ -16,7 +15,7 @@ struct SendedMessage: View {
             .padding(.trailing, 20)
             HStack{
                 Spacer()
-                Text(text)
+                Text(chat.message)
                     .bold()
                     .padding(.trailing, 20)
                     .padding(.leading, 35)
@@ -39,7 +38,12 @@ struct SendedMessage: View {
 
 struct SendedMessage_Previews: PreviewProvider {
     static var previews: some View {
-        SendedMessage(text: "This is sended Message", stringDate: "9:05 pm")
+        SendedMessage(chat: IChat(
+            id: 459845.23423,
+            name: "David M.",
+            message: "This is a received message",
+            owner: .other,
+            stringDate: "9:56 pm"))
     }
 }
 

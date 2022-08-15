@@ -1,17 +1,27 @@
 import SwiftUI
 
 struct RecievedMessage: View {
-    var text: String
-    var user: String
+    var chat: IChat
 
     var body: some View {
         VStack(spacing: -18){
+            HStack {
+
+                Text(chat.stringDate)
+                    .font(.caption)
+                    .padding(.leading, 30)
+                    .padding(.bottom, 5)
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.trailing, 20)
+
             HStack{
                 VStack(alignment: .leading, spacing: 5 ) {
-                    Text(user)
+                    Text(chat.name)
                         .bold()
                         .font(.caption)
-                    Text(text)
+                    Text(chat.message)
                 }
                 .padding(.leading, 20)
                 .padding(.trailing, 35)
@@ -33,16 +43,15 @@ struct RecievedMessage: View {
 }
 
 struct RecievedMessage_Previews: PreviewProvider {
+
     static var previews: some View {
-        RecievedMessage(text: "This a recieved Message", user: "David M.")
+        RecievedMessage(chat: IChat(
+            id: 459845.23423,
+            name: "David M.",
+            message: "This is a received message",
+            owner: .other,
+            stringDate: "9:56 pm")
+)
     }
 }
 
-//HStack {
-//    Text(user)
-//        .font(.caption)
-//        .padding(8)
-//    Spacer()
-//}
-//.frame(maxWidth: .infinity)
-//.padding(.leading, 30)

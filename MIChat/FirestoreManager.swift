@@ -14,12 +14,12 @@ struct IChat: Identifiable {
 }
 
 class FirestoreManager: ObservableObject {
-    
-    @Published var chats: [IChat] = []
+
     let db: Firestore = Firestore.firestore()
+    @Published var chats: [IChat] = []
     @Published var username: String = ""
     
-    func fetchChatsRealTime() {
+    func getChats() {
         db.collection("chats").order(by: "id")
             .addSnapshotListener { querySnapshot, error in
                 guard let documents = querySnapshot?.documents else {
@@ -43,8 +43,7 @@ class FirestoreManager: ObservableObject {
         let docData: [String: Any] = [
             "id": chat.id,
             "name": chat.name,
-            "message": chat.message,
-            "stringDate": self.getStringHour(epoch: chat.id)
+            "message": chat.message
         ]
         
         db.collection("chats").addDocument(data: docData) { error in
@@ -56,50 +55,6 @@ class FirestoreManager: ObservableObject {
             }
             
         }
-    }
-    
-    func saveUser(name: String, idToken: String, accessToken: String) {
-        let docData: [String: Any] = [
-            "name": name,
-            "idToken": idToken,
-            "accessToken": accessToken,
-            "logged": true
-        ]
-        
-        db.collection("users").document(name).setData(docData) { error in
-            if let error = error {
-                print("Error writing document: \(error)")
-            } else {
-                print("user \(name) successfully created!")
-            }
-        }
-    }
-
-    
-    func signOut(id: String) {
-        db.collection("users").document(id).updateData(["logged": false]) { error in
-            if let error = error {
-                print("Error writing document: \(error)")
-            } else {
-                print("Document successfully written!")
-            }
-            
-        }
-    }
-    
-    func getUser(id: String, _ changeState: @escaping (Bool) -> Void) {
-        let docRef = db.collection("users").document(id)
-        
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data()
-                let logged = dataDescription!["logged"] as? Bool
-                changeState(logged ?? false)
-            } else {
-                print("Document does not exist")
-            }
-        }
-        
     }
 
     func getStringHour(epoch: Double) -> String {

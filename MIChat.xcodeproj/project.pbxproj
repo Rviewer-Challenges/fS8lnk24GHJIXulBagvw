@@ -11,13 +11,13 @@
 		133E779F28A7775D00DE343A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133E779E28A7775D00DE343A /* Login.swift */; };
 		133E77A228A77F2A00DE343A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 133E77A128A77F2A00DE343A /* GoogleSignIn */; };
 		133E77A428A77F2A00DE343A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 133E77A328A77F2A00DE343A /* GoogleSignInSwift */; };
-		133E77A728A7818F00DE343A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133E77A628A7818F00DE343A /* ChatViewController.swift */; };
 		133E77AB28A785BD00DE343A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */; };
 		1348587028A786B500D14F11 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348586F28A786B500D14F11 /* GoogleSignInButton.swift */; };
 		1348587228A78BC500D14F11 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587128A78BC500D14F11 /* UserView.swift */; };
 		1348587428A78D0900D14F11 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587328A78D0900D14F11 /* NetworkImage.swift */; };
 		1348587628A79B4600D14F11 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587528A79B4600D14F11 /* FirestoreManager.swift */; };
 		135E58A028AA4A2400FA4B90 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E589F28AA4A2400FA4B90 /* IconView.swift */; };
+		135E58A228AA585A00FA4B90 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E58A128AA585A00FA4B90 /* ChatRepository.swift */; };
 		13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD028A6D6A300106BB5 /* MIChatApp.swift */; };
 		13B76DD328A6D6A300106BB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD228A6D6A300106BB5 /* ContentView.swift */; };
 		13B76DD528A6D6A400106BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B76DD428A6D6A400106BB5 /* Assets.xcassets */; };
@@ -35,7 +35,6 @@
 		13B76E0C28A6DBA900106BB5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0B28A6DBA900106BB5 /* FirebaseAuth */; };
 		13B76E0E28A6DBA900106BB5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0D28A6DBA900106BB5 /* FirebaseDatabase */; };
 		13B76E1028A6DBA900106BB5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0F28A6DBA900106BB5 /* FirebaseFirestore */; };
-		13B76E1228A6E53100106BB5 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E1128A6E53000106BB5 /* ChatViewModel.swift */; };
 		13B76E1628A6E58500106BB5 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E1528A6E58500106BB5 /* Firebase.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,13 +59,13 @@
 		1300BD0128AA2CE9002735CC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		133E779E28A7775D00DE343A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		133E77A528A77FE600DE343A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		133E77A628A7818F00DE343A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		1348586F28A786B500D14F11 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		1348587128A78BC500D14F11 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		1348587328A78D0900D14F11 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		1348587528A79B4600D14F11 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		135E589F28AA4A2400FA4B90 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		135E58A128AA585A00FA4B90 /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
 		13B76DCD28A6D6A300106BB5 /* MIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B76DD028A6D6A300106BB5 /* MIChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIChatApp.swift; sourceTree = "<group>"; };
 		13B76DD228A6D6A300106BB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +83,6 @@
 		13B76E0428A6D73300106BB5 /* RecievedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedMessage.swift; sourceTree = "<group>"; };
 		13B76E0628A6D74300106BB5 /* SendedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendedMessage.swift; sourceTree = "<group>"; };
 		13B76E0828A6DA2400106BB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		13B76E1128A6E53000106BB5 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		13B76E1528A6E58500106BB5 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,14 +144,12 @@
 				13B76E0828A6DA2400106BB5 /* GoogleService-Info.plist */,
 				13B76DFA28A6D6B000106BB5 /* Views */,
 				13B76DD028A6D6A300106BB5 /* MIChatApp.swift */,
+				133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */,
+				1348587528A79B4600D14F11 /* FirestoreManager.swift */,
+				135E58A128AA585A00FA4B90 /* ChatRepository.swift */,
 				13B76DD228A6D6A300106BB5 /* ContentView.swift */,
 				13B76DD428A6D6A400106BB5 /* Assets.xcassets */,
 				13B76DD628A6D6A400106BB5 /* Preview Content */,
-				13B76E1128A6E53000106BB5 /* ChatViewModel.swift */,
-				133E77A628A7818F00DE343A /* ChatViewController.swift */,
-				133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */,
-				1348586F28A786B500D14F11 /* GoogleSignInButton.swift */,
-				1348587528A79B4600D14F11 /* FirestoreManager.swift */,
 			);
 			path = MIChat;
 			sourceTree = "<group>";
@@ -197,6 +193,7 @@
 		13B76DFD28A6D6EC00106BB5 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				1348586F28A786B500D14F11 /* GoogleSignInButton.swift */,
 				13B76DFE28A6D6FE00106BB5 /* ProfileButtonView.swift */,
 				13B76E0028A6D70D00106BB5 /* Input.swift */,
 				13B76E0228A6D72200106BB5 /* MessageBody.swift */,
@@ -373,11 +370,10 @@
 				1348587428A78D0900D14F11 /* NetworkImage.swift in Sources */,
 				135E58A028AA4A2400FA4B90 /* IconView.swift in Sources */,
 				13B76E0728A6D74300106BB5 /* SendedMessage.swift in Sources */,
-				13B76E1228A6E53100106BB5 /* ChatViewModel.swift in Sources */,
 				133E779F28A7775D00DE343A /* Login.swift in Sources */,
-				133E77A728A7818F00DE343A /* ChatViewController.swift in Sources */,
 				1348587628A79B4600D14F11 /* FirestoreManager.swift in Sources */,
 				13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */,
+				135E58A228AA585A00FA4B90 /* ChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
