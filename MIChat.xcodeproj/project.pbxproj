@@ -17,7 +17,6 @@
 		1348587428A78D0900D14F11 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587328A78D0900D14F11 /* NetworkImage.swift */; };
 		1348587628A79B4600D14F11 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348587528A79B4600D14F11 /* FirestoreManager.swift */; };
 		135E58A028AA4A2400FA4B90 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E589F28AA4A2400FA4B90 /* IconView.swift */; };
-		135E58A228AA585A00FA4B90 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E58A128AA585A00FA4B90 /* ChatRepository.swift */; };
 		13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD028A6D6A300106BB5 /* MIChatApp.swift */; };
 		13B76DD328A6D6A300106BB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76DD228A6D6A300106BB5 /* ContentView.swift */; };
 		13B76DD528A6D6A400106BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B76DD428A6D6A400106BB5 /* Assets.xcassets */; };
@@ -35,7 +34,6 @@
 		13B76E0C28A6DBA900106BB5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0B28A6DBA900106BB5 /* FirebaseAuth */; };
 		13B76E0E28A6DBA900106BB5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0D28A6DBA900106BB5 /* FirebaseDatabase */; };
 		13B76E1028A6DBA900106BB5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 13B76E0F28A6DBA900106BB5 /* FirebaseFirestore */; };
-		13B76E1628A6E58500106BB5 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B76E1528A6E58500106BB5 /* Firebase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +63,6 @@
 		1348587328A78D0900D14F11 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		1348587528A79B4600D14F11 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		135E589F28AA4A2400FA4B90 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
-		135E58A128AA585A00FA4B90 /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
 		13B76DCD28A6D6A300106BB5 /* MIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B76DD028A6D6A300106BB5 /* MIChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIChatApp.swift; sourceTree = "<group>"; };
 		13B76DD228A6D6A300106BB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,7 +80,6 @@
 		13B76E0428A6D73300106BB5 /* RecievedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedMessage.swift; sourceTree = "<group>"; };
 		13B76E0628A6D74300106BB5 /* SendedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendedMessage.swift; sourceTree = "<group>"; };
 		13B76E0828A6DA2400106BB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		13B76E1528A6E58500106BB5 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,14 +136,12 @@
 			isa = PBXGroup;
 			children = (
 				133E77A528A77FE600DE343A /* Info.plist */,
-				13B76E1428A6E56F00106BB5 /* Services */,
 				13B76E0828A6DA2400106BB5 /* GoogleService-Info.plist */,
 				13B76DFA28A6D6B000106BB5 /* Views */,
 				13B76DD028A6D6A300106BB5 /* MIChatApp.swift */,
+				13B76DD228A6D6A300106BB5 /* ContentView.swift */,
 				133E77AA28A785BD00DE343A /* AuthenticationViewModel.swift */,
 				1348587528A79B4600D14F11 /* FirestoreManager.swift */,
-				135E58A128AA585A00FA4B90 /* ChatRepository.swift */,
-				13B76DD228A6D6A300106BB5 /* ContentView.swift */,
 				13B76DD428A6D6A400106BB5 /* Assets.xcassets */,
 				13B76DD628A6D6A400106BB5 /* Preview Content */,
 			);
@@ -204,14 +198,6 @@
 				135E589F28AA4A2400FA4B90 /* IconView.swift */,
 			);
 			path = components;
-			sourceTree = "<group>";
-		};
-		13B76E1428A6E56F00106BB5 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				13B76E1528A6E58500106BB5 /* Firebase.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				133E77AB28A785BD00DE343A /* AuthenticationViewModel.swift in Sources */,
-				13B76E1628A6E58500106BB5 /* Firebase.swift in Sources */,
 				13B76E0128A6D70D00106BB5 /* Input.swift in Sources */,
 				13B76E0528A6D73300106BB5 /* RecievedMessage.swift in Sources */,
 				13B76DFF28A6D6FE00106BB5 /* ProfileButtonView.swift in Sources */,
@@ -373,7 +358,6 @@
 				133E779F28A7775D00DE343A /* Login.swift in Sources */,
 				1348587628A79B4600D14F11 /* FirestoreManager.swift in Sources */,
 				13B76DD128A6D6A300106BB5 /* MIChatApp.swift in Sources */,
-				135E58A228AA585A00FA4B90 /* ChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,15 +9,15 @@ struct RecievedMessage: View {
 
                 Text(chat.stringDate)
                     .font(.caption)
-                    .padding(.leading, 30)
-                    .padding(.bottom, 5)
+                    .padding(.leading, 35)
+                    .padding(.bottom, 6)
                 Spacer()
             }
             .frame(maxWidth: .infinity)
             .padding(.trailing, 20)
 
             HStack{
-                VStack(alignment: .leading, spacing: 5 ) {
+                VStack(alignment: .leading) {
                     Text(chat.name)
                         .bold()
                         .font(.caption)
