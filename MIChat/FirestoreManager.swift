@@ -66,16 +66,15 @@ class FirestoreManager: ObservableObject {
             "logged": true
         ]
         
-        db.collection("users").addDocument(data: docData) { error in
-            
+        db.collection("users").document(name).setData(docData) { error in
             if let error = error {
                 print("Error writing document: \(error)")
             } else {
-                print("Document successfully written!")
+                print("user \(name) successfully created!")
             }
-            
         }
     }
+
     
     func signOut(id: String) {
         db.collection("users").document(id).updateData(["logged": false]) { error in
@@ -102,7 +101,7 @@ class FirestoreManager: ObservableObject {
         }
         
     }
-    
+
     func getStringHour(epoch: Double) -> String {
         let date = Date(timeIntervalSince1970: epoch)
         let formatter = DateFormatter()

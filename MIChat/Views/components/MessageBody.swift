@@ -2,7 +2,6 @@ import SwiftUI
 import GoogleSignIn
 
 struct MessagesBody: View {
-    @Namespace var bottomID
     @EnvironmentObject var firestoreManager: FirestoreManager
     private let user = GIDSignIn.sharedInstance.currentUser
     private var name:String = ""
@@ -22,14 +21,21 @@ struct MessagesBody: View {
                         case .other: RecievedMessage(text: chat.message, user: chat.name)
                         }
                     }
-                    Text("").id(bottomID)
                 }
             }.onChange(of: firestoreManager.chats.count) { _ in
-                proxy.scrollTo(bottomID)
+                let chatsCount = firestoreManager.chats.count
+                if chatsCount > 1 {
+                    let lastIndex = chatsCount - 1
+                    proxy.scrollTo(firestoreManager.chats[lastIndex].id)
+                }
             }
             .onAppear {
                 DispatchQueue.main.async {
-                    proxy.scrollTo(bottomID)
+                    let chatsCount = firestoreManager.chats.count
+                    if chatsCount > 1 {
+                        let lastIndex = chatsCount - 1
+                        proxy.scrollTo(firestoreManager.chats[lastIndex].id)
+                    }
                 }
                 firestoreManager.username = name
                 firestoreManager.fetchChatsRealTime()

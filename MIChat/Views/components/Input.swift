@@ -7,19 +7,23 @@ struct Input: View {
     private let user = GIDSignIn.sharedInstance.currentUser
 
     func saveChat() {
-        let id =  NSDate().timeIntervalSince1970
-        let chat = IChat(id: id,
-                         name: user?.profile?.name ?? "Fulanito de tal",
-                         message: text,
-                         owner: .mine,
-                         stringDate: firestoreManager.getStringHour(epoch: id))
+        if (text != "") {
+            let id =  NSDate().timeIntervalSince1970
+            let chat = IChat(id: id,
+                             name: user?.profile?.name ?? "Fulanito de tal",
+                             message: text,
+                             owner: .mine,
+                             stringDate: firestoreManager.getStringHour(epoch: id))
 
-        firestoreManager.saveChat(chat: chat)
+            firestoreManager.saveChat(chat: chat)
+        }
     }
 
     var body: some View {
         VStack {
             HStack {
+                ProfileButtonView()
+                    .padding(.top, 10)
                 TextField( "What you gonna share?",
                            text: $text)
                 .modifier(TextFieldClearButton(text: $text))
@@ -36,16 +40,13 @@ struct Input: View {
                         self.text = ""
                     },
                     label: {
-                        Image(systemName: "paperplane.fill").resizable()
-                            .scaledToFit()
-                            .frame(height: 20)
-                            .foregroundColor(.white)
+                        IconView(icon: "paperplane.fill", color: .white, height: 20, padding: 0)
                     }
                 )
                 
             }
             .padding()
-            .frame(maxWidth: .infinity, maxHeight: 50)
+            .frame(maxWidth: .infinity, maxHeight: 70)
             .background(.orange)
         }
     }

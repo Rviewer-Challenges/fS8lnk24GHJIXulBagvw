@@ -7,8 +7,6 @@ struct LoginView: View {
 
   var body: some View {
     VStack {
-      Spacer()
-
       Image("header_image")
         .resizable()
         .aspectRatio(contentMode: .fit)
@@ -31,7 +29,7 @@ struct LoginView: View {
         .onTapGesture {
           viewModel.signIn()
         }
-    }
+    }.padding(.top, -100)
   }
 }
 struct LoginView_Previews: PreviewProvider {

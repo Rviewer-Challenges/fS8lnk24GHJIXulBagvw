@@ -6,7 +6,6 @@ struct Chat: View {
 
     var body: some View {
         VStack {
-            Header()
             MessagesBody()
             Input()
         }
@@ -18,5 +17,6 @@ struct Chat_Previews: PreviewProvider {
     static var previews: some View {
         Chat()
             .environmentObject(AuthenticationViewModel())
+            .environmentObject(FirestoreManager())
     }
 }

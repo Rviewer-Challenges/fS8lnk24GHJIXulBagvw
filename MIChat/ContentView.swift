@@ -5,10 +5,15 @@ struct ContentView: View {
     @EnvironmentObject var firestoreManager: FirestoreManager
 
     var body: some View {
-        switch viewModel.state {
-             case .signedIn: Chat()
-             case .signedOut: LoginView()
-           }
+        NavigationView {
+            VStack{
+                switch viewModel.state {
+                     case .signedIn: Chat()
+                     case .signedOut: LoginView()
+                   }
+            }.navigationTitle("💬 MICHAT")
+                .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
