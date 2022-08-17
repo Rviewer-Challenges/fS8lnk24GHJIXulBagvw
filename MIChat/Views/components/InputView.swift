@@ -4,7 +4,7 @@ struct InputView: View {
     @Binding var text: String
 
     var body: some View {
-        TextField( "What you gonna share?",
+        TextField( "Escribe tu mensaje...",
                    text: $text)
 
         .modifier(TextFieldClearButton(text: $text))

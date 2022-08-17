@@ -7,7 +7,6 @@ struct LoginView: View {
         VStack {
             Spacer(minLength: 200)
             HeadTitleView(headTitle: AppTitle)
-
             GoogleSignInButton()
                 .padding()
                 .onTapGesture {

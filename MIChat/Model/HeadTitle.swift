@@ -9,7 +9,7 @@ struct HeadTitle {
 }
 
 let emptyStateTitle = HeadTitle(title: "¡Ups! No hay mensajes", subtitle: "¡Anímate y escribe el primero!", image: "terraBW", titleColor: .gray)
-let AppTitle = HeadTitle(title: "💬 Welcome to Michat!", subtitle: "Chat with people around the world 🌎", image: "terra", titleColor: .orange)
+let AppTitle = HeadTitle(title: "💬 Bienvenido a Michat!", subtitle: "Chatea con gente de todo el mundo 🌎", image: "terra", titleColor: .orange)
 
 
 
