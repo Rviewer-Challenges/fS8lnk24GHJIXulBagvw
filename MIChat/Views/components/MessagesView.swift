@@ -15,8 +15,11 @@ struct MessagesView: View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(spacing: 0) {
+                    if (firestoreManager.chats.count == 0) {
+                        EmptyStateView().padding(.top, 200)
+                    }
                     ForEach(firestoreManager.chats, id: \.id) { chat in
-                          MessageView(chat: chat)
+                        MessageView(chat: chat)
                     }
                 }
             }.onChange(of: firestoreManager.chats.count) { _ in
