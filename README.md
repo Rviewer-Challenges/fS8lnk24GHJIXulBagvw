@@ -1,14 +1,20 @@
 
 
-## FIREBASE CHAT 
-### Crea una aplicación de chat usando Firebase como tu backend.
-###  Reto mensual creado por MoureDev y Rviewer
+# FIREBASE CHAT 👉 MIChat 💬
+### 📱 Crea una aplicación de chat usando Firebase como tu backend.
+####  💪  &nbsp; Reto mensual creado por [MoureDev](https://github.com/mouredev/Monthly-App-Challenge-2022) y [Rviewer](https://rviewer.io/)
 
 ---
 
-# MIChat 💬
+<center>
+    <img src="https://raw.githubusercontent.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/devel/images/logo.png" alt="logo MiChat"/>
+</center>
 
-![logo](https://raw.githubusercontent.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/devel/images/logo.png)
+## 👩‍💻 Tecnologías
+- iOS 
+- SwiftUI 
+- Firestore database
+- Firebase Authentication
 
 ## 📱 A nivel general
 - [x] Login con tu cuenta de Google.
@@ -17,7 +23,6 @@
 ## 🚪 Pantalla de acceso
 
 - [x] Seleccionar tu cuenta de Google para acceder a la App
-- [x] Este registro tiene que quedar persistido en Firebase
 - [x] En algún lugar de la aplicación debe existir la posibilidad de hacer logout.
 
 ## 💬 Sala de Chat
@@ -25,12 +30,61 @@
 - [x] Este chat será en tiempo real y las conversaciones se guardarán
 - [x] cada vez que regreses a la sala de chat podrás consultar los mensajes anteriores.
 - [x] tus respuestas irán alineadas a la derecha y las de los otros usuarios a la izquierda.
-- [x] Únicamente tienes que representar texto y el nombre del usuario que lo envió
+- [x] Únicamente tienes que representar texto y el nombre del usuario que lo envió 
 
 ## 🎖️ EXTRA!
 
 - [x] Hora del mensaje
-- [ ] Notificaciones push
-- [ ] Enviar imágenes
-- [ ] Guardar imágenes
+- [x] Empty state
+
+## 📸 Capturas de pantalla
+
+<center>
+    <table>
+    <tr>
+    <td>
+    Login View
+    </td>
+    <td colspan="2">
+    Sign in con Google
+    </td>
+    <td>
+    Empty state View
+    </td>
+    <td>
+    Chats View
+    </td>
+    <td>
+    Profile View
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <img src="./images/login.png" alt="logo MiChat" width="200"/>
+    </td>
+        <td>
+    <img src="./images/google.png" alt="logo MiChat" width="200"/>
+    </td>
+    <td>
+    <img src="./images/google2.png" alt="logo MiChat" width="200"/>
+    </td>
+    <td>
+    <img src="./images/emptystate.png" alt="logo MiChat" width="200"/>
+    </td>
+    <td>
+    <img src="./images/chat.png" alt="logo MiChat" width="200"/>
+    </td>
+    <td>
+    <img src="./images/logout.png" alt="logo MiChat" width="200"/>
+    </td>
+    </tr>
+    </table>
+<center>
+
+## 📹 Video
+
+<center>
+    <video src="./images/MIChat.mov" width="80%">
+</center>
+
 
