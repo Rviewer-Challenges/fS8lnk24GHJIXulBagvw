@@ -86,7 +86,8 @@
 
 ## 📹 Video
 
-<video src="./images/MIChat.mov" width="80%">
+<video src="" width="80%">
+<a href="./images/MIChat.mov" download>Download demo video</a>
 
 
 
