@@ -8,6 +8,8 @@
 
 # MIChat 💬
 
+[logo](./images/logo.png)
+
 ## 📱 A nivel general
 - [x] Login con tu cuenta de Google.
 - [x] Una vez realizado, accederás a una sala de chat donde se visualizarán los mensajes de todos los usuarios
