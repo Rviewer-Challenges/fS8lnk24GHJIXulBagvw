@@ -88,7 +88,7 @@
 
 <a href="https://player.vimeo.com/video/740338865?h=17ed4d5ab2"> Ver video demostración</a>
 
-Si no puedes ver el video lop puedes descagar aquí <a href="./images/MIChat.mov" download>Descargar video demostración</a>
+Si no puedes ver el video lop puedes descagar aquí <a href="https://github.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/blob/devel/images/MIChat.mov?raw=true" download>Descargar video demostración</a>
 
 
 
