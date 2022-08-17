@@ -73,7 +73,7 @@
     </tr>
     <tr>
         <td>
-        <img src="./images/emptystate.png" alt="logo MiChat" width="300"/>
+        <img src="./images/emptyState.png" alt="logo MiChat" width="300"/>
         </td>
         <td>
         <img src="./images/chat.png" alt="logo MiChat" width="300"/>
