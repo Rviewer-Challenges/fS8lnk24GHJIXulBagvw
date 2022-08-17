@@ -8,7 +8,7 @@
 
 # MIChat 💬
 
-[logo](./images/logo.png)
+![logo](https://raw.githubusercontent.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/devel/images/logo.png)
 
 ## 📱 A nivel general
 - [x] Login con tu cuenta de Google.
