@@ -17,7 +17,7 @@
 
 ## 📹 Video
 
-- <a href="https://player.vimeo.com/video/740348020?h=24826d6c2f"> 👀  &nbsp;Ver video demostración</a>
+- <a href="https://player.vimeo.com/video/740348020?h=24826d6c2f" target="_blank"> 👀  &nbsp;Ver video demostración</a>
 
 - ⬇️  &nbsp;Si no puedes ver el video lop puedes descagar aquí <br /><a href="https://github.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/blob/devel/images/MIChat.mp4?raw=true" download>Descargar video demostración</a>
 
