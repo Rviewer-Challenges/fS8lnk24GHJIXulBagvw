@@ -7,7 +7,8 @@
 ---
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/devel/images/logo.png" alt="logo MiChat"/>
+<img src="
+./images/logo.png" alt="logo MiChat"/>
 </p>
 
 ## 👩‍💻 Tecnologías
@@ -19,7 +20,7 @@
 
 - <a href="https://player.vimeo.com/video/740348020?h=24826d6c2f" target="_blank"> 👀  &nbsp;Ver video demostración</a>
 
-- ⬇️  &nbsp;Si no puedes ver el video lop puedes descagar aquí <br /><a href="https://github.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/blob/devel/images/MIChat.mp4?raw=true" download>Descargar video demostración</a>
+- ⬇️  &nbsp;Si no puedes ver el video lop puedes descagar aquí <a href="https://github.com/Rviewer-Challenges/fS8lnk24GHJIXulBagvw/blob/devel/images/MIChat.mp4?raw=true" download>Descargar video demostración</a>
 
 
 ## 📸 Capturas de pantalla
@@ -34,7 +35,7 @@
         </tr>
     <tr>
         <td>
-        <img src="./images/login.png" alt="logo MiChat" width="300"/>
+        <img src="./images/login.png" alt="logo MiChat" width="265"/>
         </td>
             <td>
         <img src="./images/google.png" alt="logo MiChat" width="300"/>
@@ -58,7 +59,7 @@
     </tr>
     <tr>
         <td>
-        <img src="./images/emptyState.png" alt="logo MiChat" width="300"/>
+        <img src="./images/emptyState.png" alt="logo MiChat" width="295"/>
         </td>
         <td>
         <img src="./images/chat.png" alt="logo MiChat" width="300"/>
