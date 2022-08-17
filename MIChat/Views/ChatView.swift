@@ -6,8 +6,8 @@ struct ChatView: View {
 
     var body: some View {
         VStack {
-            MessagesBody()
-            Footer()
+            MessagesView()
+            FooterView()
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -15,7 +15,7 @@ struct ChatView: View {
 
 struct Chat_Previews: PreviewProvider {
     static var previews: some View {
-        Chat()
+        ChatView()
             .environmentObject(AuthenticationViewModel())
             .environmentObject(FirestoreManager())
     }

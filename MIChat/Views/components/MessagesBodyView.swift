@@ -1,7 +1,7 @@
 import SwiftUI
 import GoogleSignIn
 
-struct MessagesBody: View {
+struct MessagesView: View {
     @EnvironmentObject var firestoreManager: FirestoreManager
     private let user = GIDSignIn.sharedInstance.currentUser
     private var name:String = ""
@@ -16,10 +16,7 @@ struct MessagesBody: View {
             ScrollView {
                 VStack(spacing: 0) {
                     ForEach(firestoreManager.chats, id: \.id) { chat in
-                        switch chat.owner {
-                        case .mine: SendedMessage(chat: chat)
-                        case .other: RecievedMessage(chat: chat)
-                        }
+                          MessageView(chat: chat)
                     }
                 }
             }.onChange(of: firestoreManager.chats.count) { _ in
@@ -46,9 +43,9 @@ struct MessagesBody: View {
     }
 }
 
-struct MessagesBody_Previews: PreviewProvider {
+struct Messages_Previews: PreviewProvider {
     static var previews: some View {
-        MessagesBody()
+        MessagesBodyView()
             .environmentObject(FirestoreManager())
     }
 }

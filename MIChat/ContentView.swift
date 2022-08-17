@@ -8,11 +8,12 @@ struct ContentView: View {
         NavigationView {
             VStack{
                 switch viewModel.state {
-                     case .signedIn: Chat()
+                     case .signedIn: ChatView()
                      case .signedOut: LoginView()
                    }
             }.navigationTitle("💬 MICHAT")
                 .navigationBarTitleDisplayMode(.inline)
+                .accessibilityIdentifier("app title")
         }
     }
 }

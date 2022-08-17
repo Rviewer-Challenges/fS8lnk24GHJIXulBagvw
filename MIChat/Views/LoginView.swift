@@ -1,39 +1,41 @@
 import SwiftUI
 
 struct LoginView: View {
-
-  // 1
   @EnvironmentObject var viewModel: AuthenticationViewModel
 
   var body: some View {
     VStack {
-      Image("header_image")
+        Spacer(minLength: 200)
+      Image("terra")
         .resizable()
-        .aspectRatio(contentMode: .fit)
+        .frame(maxWidth: 100, maxHeight: 80)
+        .aspectRatio(contentMode: .fill)
 
-      Text("Welcome to Michat! 💬")
+      Text("💬 Welcome to Michat!")
         .fontWeight(.black)
-        .foregroundColor(Color(.systemIndigo))
+        .foregroundColor(.orange)
         .font(.title)
         .multilineTextAlignment(.center)
 
       Text("Chat with people around the world 🌎")
         .fontWeight(.light)
         .multilineTextAlignment(.center)
-        .padding()
-
-      Spacer()
+        .padding(.top, -10)
 
       GoogleSignInButton()
         .padding()
         .onTapGesture {
           viewModel.signIn()
-        }
-    }.padding(.top, -100)
+        }.padding(.top, -10)
+
+
+    }.frame(maxHeight: .infinity)
+
   }
 }
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .environmentObject(AuthenticationViewModel())
     }
 }
