@@ -38,52 +38,51 @@
 - [x] Empty state
 
 ## 📸 Capturas de pantalla
-
-    <table>
+<table>
     <tr>
-    <td>
-    Login View
-    </td>
-    <td colspan="2">
-    Sign in con Google
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <img src="./images/login.png" alt="logo MiChat" width="300"/>
-    </td>
         <td>
-    <img src="./images/google.png" alt="logo MiChat" width="300"/>
-    </td>
-    <td>
-    <img src="./images/google2.png" alt="logo MiChat" width="300"/>
-    </td>
-    </tr>
-    </table>
-    <table>
+        Login View
+        </td>
+        <td colspan="2">
+        Sign in con Google
+        </td>
+        </tr>
     <tr>
-     <td>
-    Empty state View
-    </td>
-    <td>
-    Chats View
-    </td>
-    <td>
-    Profile View
-    </td>
+        <td>
+        <img src="./images/login.png" alt="logo MiChat" width="300"/>
+        </td>
+            <td>
+        <img src="./images/google.png" alt="logo MiChat" width="300"/>
+        </td>
+        <td>
+        <img src="./images/google2.png" alt="logo MiChat" width="300"/>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+        Empty state View
+        </td>
+        <td>
+        Chats View
+        </td>
+        <td>
+        Profile View
+        </td>
     </tr>
     <tr>
-     <td>
-    <img src="./images/emptystate.png" alt="logo MiChat" width="300"/>
-    </td>
-    <td>
-    <img src="./images/chat.png" alt="logo MiChat" width="300"/>
-    </td>
-    <td>
-    <img src="./images/logout.png" alt="logo MiChat" width="300"/>
-    </td>
+        <td>
+        <img src="./images/emptystate.png" alt="logo MiChat" width="300"/>
+        </td>
+        <td>
+        <img src="./images/chat.png" alt="logo MiChat" width="300"/>
+        </td>
+        <td>
+        <img src="./images/logout.png" alt="logo MiChat" width="300"/>
+        </td>
     </tr>
-    </table>
+</table>
 
 ## 📹 Video
 
